@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Mario Kart 8 Deluxe`,
+    description: `Here you will find details of all the elements in the game Mario Kart 8 Deluxe, for Nintendo Switch. From racers statistics, vehicle information on the game, descriptions of the cups that can be competed, to a gallery of images so you can feel the adrenaline rush of driving a kart at amazing speeds.`,
+    author: `Marcus Vinícius`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`,
+        // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
