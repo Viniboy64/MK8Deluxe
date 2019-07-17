@@ -4,27 +4,37 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    style = {
+      {
+        background: `#774499`
+      }
+    }
   >
     <div
-      style={{
+      style = {
+        {
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+        maxWidth: 960
+        }
+      }
     >
-      <h1 style={{ margin: 0 }}>
+      <h1
+        style = {
+          {
+            margin: 0
+          }
+        }
+      >
         <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          to = "/"
+          style = {
+            {
+              color: `white`,
+              textDecoration: `none`
+            }
+          }
         >
-          {siteTitle}
+          { siteTitle }
         </Link>
       </h1>
     </div>
@@ -32,11 +42,11 @@ const Header = ({ siteTitle }) => (
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ``
 }
 
 export default Header
