@@ -15,7 +15,6 @@ body {
 }
 
 .Hero {
-  background: url("../../images/mk8-deluxe-background.png");
   background-size: cover;
   background-position: center;
   height: 1080px;

@@ -8,14 +8,13 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ title, description, lang, meta }) {
   const { site } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           title
           description
-          author
         }
       }
     }
@@ -25,9 +24,8 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes = { { lang } }
+      htmlAttributes = { { title, lang } }
       title = { title }
-      // titleTemplate = { `%s | ${ site.siteMetadata.title }` }
       meta = {
         [
           {
@@ -51,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Here you will find details of all the elements in the game Mario Kart 8 Deluxe, for Nintendo Switch. From racers statistics, vehicle information on the game, descriptions of the cups that can be competed, to a gallery of images so you can feel the adrenaline rush of driving a kart at amazing speeds.`,
 }
 
 SEO.propTypes = {
