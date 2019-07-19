@@ -1,21 +1,78 @@
 /* Global Style */
 
-a {
-  color: #774499;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  line-height: 1.2;
   margin: 0;
-  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.Hero {
-  background-size: cover;
+.MK8DeluxeHero {
+  background: url('../../images/backgrounds/mk8-deluxe-hero.png');
+  background-size: 1440px 800px;
   background-position: center;
-  height: 1080px;
+  width: 1440px;
+  height: 800px;
+  background-color: white;
+  background-blend-mode: luminosity;
+  position: relative;
+  z-index: 0;
+}
+
+.YoshiKart {
+  background: url('../../images/backgrounds/yoshi-kart.png');
+  background-size: 520px 364px;
+  width: 520px;
+  height: 364px;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+  animation: moveYoshiKart 4s infinite cubic-bezier(0.4, 0.64, 0.4, 0.8);
+  z-index: 1;
+}
+
+@keyframes moveYoshiKart {
+  50% {
+    transform: translate(4px, -4px);
+  }
+}
+
+.MarioKart {
+  background: url('../../images//backgrounds/mario-kart.png');
+  background-size: 720px;
+  width: 720px;
+  height: 720px;
+  position: absolute;
+  bottom: -24px;
+  right: 24px;
+  animation: moveMarioKart 8s infinite cubic-bezier(0.48, 0.72, 0.48, 0.96);
+  z-index: 2;
+}
+
+@keyframes moveMarioKart {
+  50% {
+    transform: translateX(-16px);
+  }
+}
+
+.MK8DeluxeHero svg {
+  bottom: -1px;
+  left: 0;
+  position: absolute;
+  z-index: 3;
+}
+
+.MK8DeluxeLogo {
+  background: url('../../images/backgrounds/mk8-deluxe-logo.png');
+  background-size: 720px 208px;
+  width: 720px;
+  height: 208px;
+  position: absolute;
+  bottom: 80px;
+  left: 64px;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.72));
+  transition: 0.64s cubic-bezier(0.32, 0.64, 0.32, 0.8);
+  z-index: 4;
+}
+
+.MK8DeluxeLogo:hover {
+  transform: scale(1.1);
 }

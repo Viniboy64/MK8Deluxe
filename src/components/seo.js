@@ -26,6 +26,7 @@ function SEO({ title, description, lang, meta }) {
     <Helmet
       htmlAttributes = { { title, lang } }
       title = { title }
+      titleTemplate = { `%s - ${ site.siteMetadata.title }` }
       meta = {
         [
           {
