@@ -1,16 +1,13 @@
-/* Global Style */
-
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .MK8DeluxeHero {
   background: url('../../images/backgrounds/mk8-deluxe-hero.png');
-  background-size: 1440px 800px;
+  background-size: 1496px 840px;
   background-position: center;
   width: 1440px;
-  height: 800px;
+  height: 840px;
   background-color: white;
   background-blend-mode: luminosity;
   position: relative;
@@ -68,11 +65,12 @@ body {
   position: absolute;
   bottom: 80px;
   left: 64px;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.72));
+  filter: drop-shadow(0 16px 8px rgba(0, 0, 0, 0.72));
   transition: 0.64s cubic-bezier(0.32, 0.64, 0.32, 0.8);
   z-index: 4;
 }
 
 .MK8DeluxeLogo:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }

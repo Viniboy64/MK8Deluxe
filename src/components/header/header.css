@@ -1,0 +1,205 @@
+.Header {
+    background: linear-gradient(90deg, rgba(187, 17, 68, 0.64) 0%, rgba(119, 68, 153, 0.64) 50%, rgba(51, 102, 187, 0.64) 100%);
+    background-size: 1072px 64px;
+    width: 1072px;
+    height: 64px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.72);
+    position: fixed;
+    top: 32px;
+    left: calc(50% - 1072px/2);
+    z-index: 1;
+}
+
+.ItemsGroup {
+    background-size: 136px 64px;
+    width: 136px;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 56px auto;
+    position: absolute;
+    top: calc(50% - 64px/2);
+    right: 24px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.72));
+    transition: 0.64s cubic-bezier(0.32, 0.64, 0.32, 0.8);
+    z-index: 0;
+}
+
+.ItemsGroup:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ItemsIcon {
+    background: url('../../images/header/items-icon.png');
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: calc(50% - 48px/2);
+    left: 8px;
+}
+
+.ItemsText {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px white;
+    background-size: 72px 24px;
+    width: 72px;
+    height: 24px;
+    position: relative;
+    top: calc(50% - 24px/2);
+    left: 0;
+}
+
+.CupsGroup {
+    background-size: 136px 64px;
+    width: 136px;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 56px auto;
+    position: absolute;
+    top: calc(50% - 64px/2);
+    right: 252px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.72));
+    transition: 0.64s cubic-bezier(0.32, 0.64, 0.32, 0.8);
+    z-index: 1;
+}
+
+.CupsGroup:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.CupsIcon {
+    background: url('../../images/header/cups-icon.png');
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: calc(50% - 48px/2);
+    left: 8px;
+}
+
+.CupsText {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px white;
+    background-size: 72px 24px;
+    width: 72px;
+    height: 24px;
+    position: relative;
+    top: calc(50% - 24px/2);
+    left: 0;
+}
+
+.VehiclesGroup {
+    background-size: 206px 64px;
+    width: 206px;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 78px auto;
+    position: absolute;
+    top: calc(50% - 64px/2);
+    left: 237px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.72));
+    transition: 0.64s cubic-bezier(0.32, 0.64, 0.32, 0.8);
+    z-index: 2;
+}
+
+.VehiclesGroup:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.VehiclesIcon {
+    background: url('../../images/header/vehicles-icon.png');
+    background-size: 70px 48px;
+    width: 70px;
+    height: 48px;
+    position: relative;
+    top: calc(50% - 48px/2);
+    left: 8px;
+}
+
+.VehiclesText {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px white;
+    background-size: 120px 24px;
+    width: 120px;
+    height: 24px;
+    position: relative;
+    top: calc(50% - 24px/2);
+    left: 0;
+}
+
+.RacersGroup {
+    background-size: 168px 64px;
+    width: 168px;
+    height: 64px;
+    display: grid;
+    grid-template-columns: 56px auto;
+    position: absolute;
+    top: calc(50% - 64px/2);
+    left: 24px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.72));
+    transition: 0.64s cubic-bezier(0.32, 0.64, 0.32, 0.8);
+    z-index: 3;
+}
+
+.RacersGroup:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.RacersIcon {
+    background: url('../../images/header/racers-icon.png');
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: calc(50% - 48px/2);
+    left: 8px;
+}
+
+.RacersText {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px white;
+    background-size: 104px 24px;
+    width: 104px;
+    height: 24px;
+    position: relative;
+    top: calc(50% - 24px/2);
+    left: 0;
+}
+
+.HomeIcon {
+    background: url('../../images/header/home-icon.png');
+    background-size: 96px;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: calc(50% - 96px/2);
+    left: calc(50% - 96px/2);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.72));
+    cursor: pointer;
+    z-index: 1;
+}

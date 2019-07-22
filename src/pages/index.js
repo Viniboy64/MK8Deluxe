@@ -30,7 +30,9 @@ const IndexPage = () => (
           />
         </path>
       </svg>
-      <div className = "MK8DeluxeLogo"/>
+      <a href = "https://mariokart8.nintendo.com">
+        <div className = "MK8DeluxeLogo"/>
+      </a>
     </div>
   </Layout>
 )
